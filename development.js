@@ -1,0 +1,6 @@
+console.log(1 + "2" + "2");//it is concat as a string.“1” + “2” becomes “12”.Concatenate the second “2” to that and the final answer is “122.”
+console.log(1 + +"2" + "2");//the second + sign is processed first.+ sign is executed on the first “2”, and is automatically transformed into a number.so 1 + (+2) becomes 3.the second “2” is still a string, however, so it gets concatenated onto the 3 (which turns into a string), resulting in “32.”
+console.log(1 + -"1" + "2");//2nd - makes 1 as string to integer, but second 2 is string, so it makes 02
+console.log(+"1" + "1" + "2");// The first “1” turns into a number.But because the second “1” is still a string, the first “1” turns back into a string. Concatenate those two and the final “2” together and we get “112.”
+console.log("A" - "B" + "2");//- cannot used for string values, nor this reason to find A-B is NAN and adding 2 as a string.we end up as final answer as NAN2.
+console.log("A" - "B" + 2);//here we add the number 2 to the NaN we get from the first operation. NaN + any number gets us NaN still, so the final answer here is NaN.
